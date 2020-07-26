@@ -1,0 +1,73 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: serif;
+    font-size: 20px;
+}
+
+body{
+    
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.container{
+    width: 800px;
+    max-width: 80%;
+    background-color: lightgoldenrodyellow;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+.btn{
+    background-color: lightpink;
+    border: 1px solid palevioletred;
+    border-radius: 5px;
+    padding: 5px  10px;
+    color: rgb(8, 8, 8);
+    outline: none;
+}
+.btn:hover{
+    border-color: rgb(13, 0, 128);
+}
+.btn.correct{
+    background-color: royalblue;
+}
+.btn.wrong{
+    background-color: red;
+}
+.start-btn , .next-btn{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide{
+    display: none;
+
+}
+
+.custom-box{
+    max-width: 700px;
+    background-color: lavenderblush;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
